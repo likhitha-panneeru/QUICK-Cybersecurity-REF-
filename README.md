@@ -16,5 +16,9 @@ View the Website : 👉 **[Open QUICK Cybersecurity Reference](https://likhitha-
 8. Web Application Security
 9. Ethical Hacking & Penetration Testing
 10. Incident Response & Blue Team
+
+Don't think of them as 10 completely separate subjects.
+
+Think of them as layers:
     
 <img width="498" height="598" alt="image" src="https://github.com/user-attachments/assets/3978e750-9467-4f56-86fa-d1ade70dba30" />
