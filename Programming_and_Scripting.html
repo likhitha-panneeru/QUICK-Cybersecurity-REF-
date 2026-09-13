@@ -1,0 +1,186 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Programming &amp; Scripting</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet"><style>:root{--p:#d97706;--amber:#f59e0b;--dark:#252525;--bg:#f8fafc;--green:#15803d;--blue:#2563eb;--red:#dc2626;--purple:#7c3aed;--code:#1e1e2e;--border:#e2e8f0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#263238;font:16px/1.7 Inter,Arial,sans-serif}h1,h2,h3,h4{font-family:Merriweather,Georgia,serif;color:var(--dark);line-height:1.3}h1{font-size:clamp(2rem,5vw,3.5rem)}h2{font-size:clamp(1.4rem,3vw,2rem);border-bottom:2px solid #fde68a;padding-bottom:.6rem}h3{margin-top:2rem}.layout{display:flex}.sidebar{position:sticky;top:0;height:100vh;width:285px;flex:0 0 285px;background:var(--dark);padding:24px 18px;overflow:auto}.module{color:#fbbf24;font:600 .75rem 'JetBrains Mono',monospace;letter-spacing:.1em}.brand{color:#fff;font:900 1.05rem Merriweather,serif;margin:9px 0 18px}.sidebar a{display:block;color:#cbd5e1;padding:7px 10px;border-radius:7px;font-size:.87rem}.sidebar a:hover{background:#3b3b3b;color:#fff;text-decoration:none}main{width:min(1120px,100%);margin:auto;padding:45px 44px 70px}.hero{background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid #fed7aa;border-radius:18px;padding:35px;margin-bottom:30px}.eyebrow{color:#b45309;font:600 .78rem 'JetBrains Mono',monospace;text-transform:uppercase}.card,.box,.term,.info,.security,.tip{background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px;margin:16px 0}.definition{border-left:5px solid var(--green);background:#f0fdf4}.term{border-left:5px solid var(--p);background:#fffaf0}.info{border-left:5px solid var(--blue);background:#eff6ff}.security{border-left:5px solid var(--red);background:#fef2f2}.tip{border-left:5px solid var(--purple);background:#f5f3ff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.grid .card{margin:0}table{width:100%;border-collapse:collapse;background:#fff;margin:18px 0}th,td{padding:10px 12px;border:1px solid var(--border);vertical-align:top}th{background:#b45309;color:#fff;text-align:left}tr:nth-child(even) td{background:#fffbeb}code{font-family:'JetBrains Mono',monospace;background:#fff7ed;color:#9a3412;padding:.1em .3em;border-radius:4px}.code{position:relative;background:var(--code);border-radius:10px;padding:34px 17px 15px;overflow:auto;margin:16px 0}.code:before{content:attr(data-lang);position:absolute;right:12px;top:8px;color:#fbbf24;font:600 .68rem 'JetBrains Mono',monospace;text-transform:uppercase}.code code{display:block;background:transparent;color:#e5e7eb;padding:0;white-space:pre;font-size:.82rem;line-height:1.65}.svg{background:#fff;border:1px solid var(--border);border-radius:14px;padding:10px;overflow:auto;margin:18px 0}.svg svg{width:100%;height:auto;display:block}@media(max-width:850px){.sidebar{display:none}main{padding:28px 17px 50px}table{font-size:.87rem}}</style></head><body><div class="layout"><aside class="sidebar"><div class="module">MODULE 4</div><div class="brand">Programming &amp; Scripting</div><nav><a href="#s41">4.1 Programming Basics</a><a href="#s42">4.2 Programming Concepts</a><a href="#s43">4.3 Python</a><a href="#s44">4.4 Bash Scripting</a><a href="#s45">4.5 PowerShell</a><a href="#s46">4.6 JavaScript Basics</a><a href="#s47">4.7 SQL</a><a href="#s48">4.8 Git & Version Control</a></nav></aside><main><header class="hero"><div class="eyebrow">Cybersecurity Foundations · Module 4</div><h1>Programming &amp; Scripting</h1><p>A complete foundation in programming concepts and the languages, automation techniques, database skills and version-control practices most useful to cybersecurity practitioners.</p></header><section id="s41"><h2>4.1 Programming Basics</h2><div class="definition"><strong>Programming</strong><p>Writing instructions that a computer can execute. Human-readable source code is translated or interpreted into instructions ultimately executed by the CPU.</p></div><div class="grid"><div class="card"><h4>Source Code</h4><p>Human-readable text written in Python, C, Java and other languages.</p></div><div class="card"><h4>Machine Code</h4><p>CPU-level binary/instruction-set operations directly executed by a processor.</p></div><div class="card"><h4>Assembly</h4><p>Low-level mnemonics such as MOV, ADD and JMP that closely represent machine instructions.</p></div></div><div class="svg"><svg viewBox="0 0 1000 280" role="img"><defs><marker id="m" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b45309"/></marker></defs><rect x="20" y="105" width="170" height="65" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="3"/><text x="105" y="143" text-anchor="middle">Source Code</text><line x1="190" y1="137" x2="300" y2="55" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><line x1="190" y1="137" x2="300" y2="137" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><line x1="190" y1="137" x2="300" y2="220" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><rect x="300" y="30" width="170" height="50" rx="10" fill="#eff6ff" stroke="#2563eb"/><text x="385" y="61" text-anchor="middle">Compiler</text><rect x="300" y="112" width="170" height="50" rx="10" fill="#f5f3ff" stroke="#7c3aed"/><text x="385" y="143" text-anchor="middle">Interpreter</text><rect x="300" y="194" width="170" height="50" rx="10" fill="#fef2f2" stroke="#dc2626"/><text x="385" y="225" text-anchor="middle">Assembler</text><line x1="470" y1="55" x2="590" y2="55" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><line x1="470" y1="137" x2="590" y2="137" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><line x1="470" y1="219" x2="590" y2="219" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><rect x="590" y="30" width="170" height="50" rx="10" fill="#f0fdf4" stroke="#15803d"/><text x="675" y="61" text-anchor="middle">Machine Code</text><rect x="590" y="112" width="170" height="50" rx="10" fill="#f0fdf4" stroke="#15803d"/><text x="675" y="143" text-anchor="middle">Runtime → CPU</text><rect x="590" y="194" width="170" height="50" rx="10" fill="#f0fdf4" stroke="#15803d"/><text x="675" y="225" text-anchor="middle">Machine Code</text><line x1="760" y1="55" x2="880" y2="137" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><line x1="760" y1="137" x2="880" y2="137" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><line x1="760" y1="219" x2="880" y2="137" stroke="#b45309" stroke-width="3" marker-end="url(#m)"/><rect x="880" y="105" width="100" height="65" rx="10" fill="#252525"/><text x="930" y="143" text-anchor="middle" fill="#fff" style="fill:#fff">CPU</text></svg></div><div class="grid"><div class="card"><h4>Compiler</h4><p>Translates source before execution and generally creates executable/machine-code output. Compile-time errors can be caught early. C, C++, Go and Rust are common compiled languages.</p></div><div class="card"><h4>Interpreter</h4><p>Executes source through a runtime interpreter/VM. Errors can appear at runtime. Python, JavaScript, Ruby and PHP use runtime interpretation systems.</p></div><div class="card"><h4>Assembler</h4><p>Translates assembly language into machine code.</p></div><div class="card"><h4>Runtime</h4><p>Environment in which a program executes, including libraries, memory management and error handling.</p></div><div class="card"><h4>Syntax</h4><p>Language grammar. Invalid syntax produces syntax errors.</p></div><div class="card"><h4>Logic</h4><p>Program reasoning and flow. Logic errors can run successfully while producing wrong results.</p></div><div class="card"><h4>Debugging</h4><p>Finding/fixing bugs with logging, breakpoints and tools such as pdb, gdb and x64dbg.</p></div></div><div class="security"><strong>Cybersecurity relevance</strong><p>Reverse engineers inspect assembly and machine code to understand malware; exploit researchers study memory and input handling; security teams automate work with Python, Bash and PowerShell.</p></div></section><section id="s42"><h2>4.2 Programming Concepts</h2><div class="definition"><strong>Core concepts</strong><p>Variables, constants, data types, operators, expressions, conditions, loops, functions, data structures, I/O and exceptions are universal programming building blocks.</p></div><div class="grid"><div class="card"><h4>Variables</h4><p>Named storage locations whose values can change.</p></div><div class="card"><h4>Constants</h4><p>Values intended not to change, such as PI or MAX_ATTEMPTS.</p></div></div><table><tr><th>Type</th><th>Meaning</th><th>Examples</th></tr><tr><td>Integer</td><td>Whole numbers</td><td>42, -7, 0</td></tr><tr><td>Float</td><td>Decimal numbers</td><td>3.14, -0.5</td></tr><tr><td>String</td><td>Text</td><td>"hello", 'world'</td></tr><tr><td>Boolean</td><td>True/False</td><td>True, False</td></tr><tr><td>None/null</td><td>Absence of value</td><td>None, null</td></tr></table><table><tr><th>Operators</th><th>Examples</th><th>Use</th></tr><tr><td>Arithmetic</td><td>+ - * / // % **</td><td>Calculations</td></tr><tr><td>Comparison</td><td>== != > < >= <=</td><td>Conditions</td></tr><tr><td>Logical</td><td>and or not</td><td>Combine rules</td></tr><tr><td>Assignment</td><td>= += -= *= /=</td><td>Update state</td></tr><tr><td>Bitwise</td><td>& | ^ ~ << >></td><td>Networking, crypto, low-level work</td></tr></table><div class="code" data-lang="Python"><code>age = 21
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+for item in ["SSH", "HTTP", "DNS"]:
+    print(item)
+
+attempts = 0
+while attempts < 5:
+    attempts += 1</code></div><div class="grid"><div class="card"><h4>Expression</h4><p>A combination of values, variables and operators that evaluates to a result, e.g. 5 + 3 * 2 → 11.</p></div><div class="card"><h4>Conditions</h4><p>if/else makes decisions; switch/match selects among cases.</p></div><div class="card"><h4>Loops</h4><p>for iterates over collections/ranges; while repeats while a condition is true.</p></div><div class="card"><h4>Functions</h4><p>Reusable code blocks. Parameters go in; return values come back.</p></div><div class="card"><h4>Strings</h4><p>Character sequences used for parsing logs, commands and payload data.</p></div><div class="card"><h4>I/O</h4><p>Reading/writing users, files, devices and networks.</p></div><div class="card"><h4>Exceptions</h4><p>Runtime problems that can be handled with try/except.</p></div></div><div class="code" data-lang="Python"><code>def greet(name):
+    return f"Hello {name}"
+
+print(greet("Alice"))
+
+try:
+    value = int("42")
+    print(100 / value)
+except (ValueError, ZeroDivisionError) as exc:
+    print("Error:", exc)</code></div><table><tr><th>Structure</th><th>Characteristics</th><th>Example</th></tr><tr><td>List/Array</td><td>Ordered, indexed collection</td><td>[1,2,3]</td></tr><tr><td>Dictionary</td><td>Key-value pairs</td><td>{"role":"analyst"}</td></tr><tr><td>Set</td><td>Unique values</td><td>{1,2,3}</td></tr><tr><td>Tuple</td><td>Ordered, immutable in Python</td><td>(1,2,3)</td></tr></table></section><section id="s43"><h2>4.3 Python</h2><div class="definition"><strong>Python</strong><p>A major cybersecurity language for automation, scripting, API work, log analysis, security tooling, exploit research and malware analysis.</p></div><div class="code" data-lang="Bash"><code>python3 --version
+pip --version
+python3
+print("Hello, cybersecurity")
+exit()</code></div><p>Python offers interactive mode with <code>&gt;&gt;&gt;</code> and script mode with <code>python3 script.py</code>. Linux distributions commonly provide Python 3; Windows installations should add Python to PATH.</p><div class="code" data-lang="Python"><code>name = "alice"
+age = 25
+is_admin = True
+print(type(age), isinstance(age, int))
+print(int("42"), str(100), float("3.14"))
+
+log = "FAILED_LOGIN 192.168.1.25"
+print(log.split()[-1])
+print(log.upper(), log[::-1])</code></div><div class="code" data-lang="Python"><code>ips = ["192.168.1.10", "10.0.0.5", "192.168.1.20"]
+internal = [ip for ip in ips if ip.startswith("192.168")]
+print(internal)
+print(set(["10.0.0.1", "10.0.0.1", "10.0.0.2"]))
+x, y = (10, 20)
+print(x, y)</code></div><div class="code" data-lang="Python"><code>user = {"name":"alice", "role":"admin", "active":True}
+print(user["name"], user.get("role"))
+for key, value in user.items(): print(key, value)
+
+dangerous_ports = [21, 23, 445, 3389]
+if 445 in dangerous_ports: print("Review service")</code></div><div class="code" data-lang="Python"><code>def password_strength(password, minimum=12):
+    return len(password) >= minimum
+
+def validate_ipv4(value):
+    p = value.split(".")
+    return len(p) == 4 and all(x.isdigit() and 0 <= int(x) <= 255 for x in p)
+
+print(password_strength("CorrectHorseBattery"))
+print(validate_ipv4("192.168.1.10"))
+square = lambda x: x ** 2
+print(square(5))</code></div><div class="code" data-lang="Bash"><code>python3 -m venv myenv
+source myenv/bin/activate
+pip install requests
+pip list
+pip freeze > requirements.txt
+deactivate</code></div><div class="code" data-lang="Python"><code>import json, csv
+data = json.loads('{"status":"ok","severity":"high"}')
+print(data["severity"])
+with open("vulnerabilities.csv", newline="", encoding="utf-8") as f:
+    for row in csv.DictReader(f):
+        if row["severity"].lower() == "high": print(row)</code></div><div class="code" data-lang="Python"><code>import re
+text = "Failed login 192.168.1.25 alice@example.com"
+print(re.findall(r"\b(?:\d{1,3}\.){3}\d{1,3}\b", text))
+print(re.findall(r"\b[\w.-]+@[\w.-]+\.\w+\b", text))</code></div><div class="code" data-lang="Python"><code>import logging
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+try:
+    with open("auth.log", encoding="utf-8") as f:
+        for line in f:
+            if "FAILED_LOGIN" in line: logging.warning(line.strip())
+except FileNotFoundError: logging.error("File not found")
+except PermissionError: logging.error("Permission denied")</code></div><div class="code" data-lang="Python"><code>import requests
+r = requests.get("https://example.com", timeout=10)
+print(r.status_code, r.headers.get("content-type"))
+r = requests.post("https://httpbin.org/post", json={"name":"alice"}, timeout=10)
+print(r.json()["json"])</code></div><div class="code" data-lang="Python"><code>import socket
+for port in [22, 80, 443]:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.settimeout(1)
+        try: s.connect(("example.com", port)); print(port, "OPEN")
+        except (socket.timeout, ConnectionRefusedError, OSError): print(port, "CLOSED/FILTERED")</code></div><div class="svg"><svg viewBox="0 0 1000 280" role="img"><rect x="40" y="95" width="190" height="80" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="3"/><text x="135" y="140" text-anchor="middle">Python Client</text><rect x="405" y="75" width="190" height="120" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/><text x="500" y="120" text-anchor="middle">REST API</text><text x="500" y="145" text-anchor="middle">HTTP + JSON</text><rect x="770" y="95" width="190" height="80" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="3"/><text x="865" y="140" text-anchor="middle">Server</text><defs><marker id="p" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b45309"/></marker></defs><line x1="230" y1="115" x2="405" y2="115" stroke="#b45309" stroke-width="3" marker-end="url(#p)"/><line x1="595" y1="155" x2="770" y2="155" stroke="#b45309" stroke-width="3" marker-end="url(#p)"/><line x1="405" y1="175" x2="230" y2="175" stroke="#7c3aed" stroke-width="3" marker-end="url(#p)"/></svg></div><p>APIs use endpoints, GET/POST/PUT/DELETE, status codes, headers, JSON, and authentication such as API keys or Bearer tokens. Keep secrets out of source code.</p><div class="code" data-lang="Python"><code>from datetime import datetime
+import subprocess
+with open("ips.txt", encoding="utf-8") as f: ips=[x.strip() for x in f if x.strip()]
+with open("report.txt","w",encoding="utf-8") as out:
+    for ip in ips:
+        r=subprocess.run(["ping","-c","1","-W","1",ip],capture_output=True,text=True)
+        state="UP" if r.returncode==0 else "DOWN"
+        out.write(f"{datetime.now().isoformat()} {ip} {state}\n")</code></div><div class="security"><strong>Practice projects</strong><p>Port scanner; password-strength checker; brute-force log parser; lab hash cracker using a wordlist; DNS subdomain enumerator; SHA-256 file-integrity checker; Scapy sniffer in an authorized lab; OSINT scraper.</p></div></section><section id="s44"><h2>4.4 Bash Scripting</h2><div class="definition"><strong>Shell and Bash</strong><p>A shell is a command-line interpreter. Bash (Bourne Again Shell) is a common Linux shell and scripting language for administration and security automation.</p></div><div class="code" data-lang="Bash"><code>#!/bin/bash
+name="alice"
+echo "Hello $name"
+echo "$USER $HOME $PWD $SHELL"
+current_user=$(whoami)
+today=$(date +%Y-%m-%d)
+echo "$current_user $today"</code></div><div class="code" data-lang="Bash"><code>#!/bin/bash
+ip="$1"
+if [[ -z "$ip" ]]; then echo "Usage: $0 IP"; exit 1; fi
+if [[ "$(id -u)" -ne 0 ]]; then echo "Run as root if required"; fi
+echo "Target: $ip; args: $#"</code></div><table><tr><th>Test</th><th>Meaning</th></tr><tr><td>-eq -ne -gt -lt -ge -le</td><td>Numeric comparisons</td></tr><tr><td>= !=</td><td>String comparisons</td></tr><tr><td>-z -n</td><td>Empty / non-empty</td></tr><tr><td>-f -d</td><td>File / directory</td></tr><tr><td>-r -w -x</td><td>Permissions</td></tr><tr><td>&& ||</td><td>AND / OR</td></tr></table><div class="code" data-lang="Bash"><code>for i in 1 2 3; do echo "$i"; done
+for ip in 192.168.1.{1..10}; do ping -c 1 -W 1 "$ip" >/dev/null 2>&1 && echo "$ip UP"; done
+while IFS= read -r line; do echo "$line"; done < ips.txt</code></div><div class="code" data-lang="Bash"><code>port_check(){ local host="$1"; local port="$2"; nc -z -w 2 "$host" "$port" >/dev/null 2>&1; if [[ $? -eq 0 ]]; then echo OPEN; else echo CLOSED; fi; }
+port_check 127.0.0.1 22</code></div><div class="code" data-lang="Bash"><code>grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq -c | sort -rn | head
+echo overwrite > output.txt
+echo append >> output.txt
+command 2> errors.txt
+command > all.txt 2>&1
+command >/dev/null 2>&1</code></div><div class="info"><strong>Exit codes</strong><p>$? contains the previous command status: 0 normally means success and non-zero means failure. Command substitution uses $(command) (backticks are legacy).</p></div><div class="code" data-lang="Bash"><code>#!/bin/bash
+domain="$1"
+ts=$(date +%Y%m%d_%H%M%S)
+report="recon_${ts}.txt"
+[[ -z "$domain" ]] && { echo "Usage: $0 domain"; exit 1; }
+{ echo "WHOIS"; whois "$domain" 2>/dev/null || true; echo "DNS"; dig "$domain" 2>/dev/null || true; echo "NMAP"; nmap -T3 --top-ports 20 "$domain" 2>/dev/null || true; } > "$report"
+echo "Saved $report"</code></div><div class="tip"><strong>Script permissions and safety</strong><p>Use <code>chmod +x script.sh</code>, run <code>./script.sh</code> or <code>bash script.sh</code>, and use sudo only when necessary. Quote variables, validate arguments, avoid unsafe eval, and test in an authorized lab.</p></div></section><section id="s45"><h2>4.5 PowerShell</h2><div class="definition"><strong>PowerShell</strong><p>Windows modern shell and scripting language. Its pipeline passes .NET objects rather than merely text, making structured filtering and automation powerful for administration and incident response.</p></div><div class="code" data-lang="PowerShell"><code>Get-Command *process*
+Get-Help Get-Process -Examples
+$proc=Get-Process
+$proc | Select-Object -First 5 Name,Id,CPU
+$name="alice"; $count=42
+$env:USERNAME</code></div><div class="code" data-lang="PowerShell"><code>Get-Process | Where-Object { $_.CPU -gt 100 } | Sort-Object CPU -Descending | Select-Object Name,Id,CPU
+Get-Process -Name "chrome"
+Get-ChildItem -Path C:\ -Recurse -Filter "*.log" -ErrorAction SilentlyContinue</code></div><div class="code" data-lang="PowerShell"><code>function Test-ServiceRunning { param([string]$Name); $s=Get-Service $Name -ErrorAction Stop; if($s.Status -eq "Running"){return $true}; Start-Service $Name; return $false }
+Test-ServiceRunning -Name "Spooler"</code></div><div class="code" data-lang="PowerShell"><code># triage.ps1
+$report="triage.txt"
+hostname | Out-File $report
+Get-CimInstance Win32_OperatingSystem | Select Caption,Version,LastBootUpTime | Out-File $report -Append
+Get-NetIPAddress | Where AddressFamily -eq "IPv4" | Select IPAddress,InterfaceAlias | Out-File $report -Append
+Get-NetTCPConnection -State Listen | Select LocalAddress,LocalPort,OwningProcess | Out-File $report -Append</code></div><table><tr><th>Policy</th><th>Meaning</th></tr><tr><td>Restricted</td><td>No scripts</td></tr><tr><td>AllSigned</td><td>Scripts must be signed</td></tr><tr><td>RemoteSigned</td><td>Downloaded scripts require signing; local scripts can run</td></tr><tr><td>Unrestricted</td><td>Few restrictions</td></tr><tr><td>Bypass</td><td>Skips execution-policy checks</td></tr></table><div class="code" data-lang="PowerShell"><code>Get-ExecutionPolicy
+Set-ExecutionPolicy RemoteSigned</code></div><div class="security"><strong>Execution Policy</strong><p>Execution Policy is not a security boundary. Attackers may try <code>powershell -ExecutionPolicy Bypass -File script.ps1</code>; defenders need application control, endpoint security, least privilege and logging.</p></div><div class="code" data-lang="PowerShell"><code>$start=(Get-Date).AddHours(-24)
+Get-WinEvent -FilterHashtable @{LogName="Security";Id=4625;StartTime=$start} | Group-Object {$_.Properties[19].Value} | Sort Count -Descending | Select Count,Name</code></div><div class="security"><strong>PowerShell logging</strong><p>Enable Script Block Logging, Module Logging and Transcription using appropriate Windows policy. PowerShell is heavily used by attackers and is equally valuable to defenders for triage and automation.</p></div></section><section id="s46"><h2>4.6 JavaScript Basics</h2><div class="definition"><strong>JavaScript</strong><p>Browser scripting language essential to web security. Understanding JavaScript helps explain DOM behavior, client-side validation, cookies, APIs and XSS.</p></div><div class="code" data-lang="JavaScript"><code>const MAX=100;
+let name="alice";
+function greet(user){ return "Hello "+user; }
+const arrow=(user)=>`Hello ${user}`;
+const user={name:"alice",age:25,isAdmin:true};
+const items=[1,"hello",true];
+items.push("new");
+console.log(user.name,items.length,arrow(name));</code></div><div class="code" data-lang="JavaScript"><code>const title=document.getElementById("title");
+const button=document.querySelector("#scan");
+button.addEventListener("click",()=>{title.textContent="Scan started";});
+const li=document.createElement("li"); li.textContent="Safe DOM update";
+document.querySelector("#list").appendChild(li);</code></div><div class="grid"><div class="card"><h4>var / let / const</h4><p>var is legacy function-scoped syntax; prefer let for reassignment and const for bindings that should not be reassigned.</p></div><div class="card"><h4>Objects</h4><p>Key-value properties accessed as user.name or user["name"].</p></div><div class="card"><h4>Arrays</h4><p>Ordered values with push, pop, shift, unshift, map, filter, forEach, find, includes, indexOf and length.</p></div><div class="card"><h4>DOM</h4><p>Browser representation of HTML as objects. Unsafe innerHTML with untrusted input can create XSS.</p></div><div class="card"><h4>Events</h4><p>click, submit, keypress, load and other interactions trigger handlers.</p></div><div class="card"><h4>Browser security</h4><p>JavaScript runs in a sandbox; same-origin policy restricts cross-origin reads.</p></div></div><div class="security"><strong>Client-side trust boundary</strong><p>Users can inspect and modify frontend code. Never trust client-side validation or store secrets in JavaScript. Authorization must be enforced server-side.</p></div><div class="code" data-lang="JavaScript"><code>console.log(document.cookie);
+localStorage.setItem("theme","dark");
+console.log(localStorage.getItem("theme"));
+localStorage.removeItem("theme");</code></div><div class="code" data-lang="JavaScript"><code>fetch("https://example.com/api/data")
+ .then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();})
+ .then(data=>console.log(data))
+ .catch(err=>console.error(err));</code></div><div class="security"><strong>XSS</strong><p>Cross-Site Scripting causes attacker-controlled script to execute in a victim browser. HttpOnly cookies cannot be read by JavaScript; safe DOM APIs, output encoding and CSP reduce risk. Avoid placing sensitive tokens in localStorage when safer designs are available.</p></div></section><section id="s47"><h2>4.7 SQL</h2><div class="definition"><strong>SQL / RDBMS</strong><p>SQL is the standard language for relational databases. A DBMS stores, retrieves and enforces rules; an RDBMS organizes related data into tables connected by keys. Common systems include MySQL, PostgreSQL, SQLite, Oracle and SQL Server.</p></div><table><tr><th>Concept</th><th>Meaning</th></tr><tr><td>Table</td><td>Rows and columns representing an entity</td></tr><tr><td>Row</td><td>One record</td></tr><tr><td>Column</td><td>One field</td></tr><tr><td>Primary Key</td><td>Unique identifier; not NULL</td></tr><tr><td>Foreign Key</td><td>References another table key</td></tr><tr><td>Relationships</td><td>One-to-one, one-to-many, many-to-many</td></tr></table><div class="svg"><svg viewBox="0 0 1000 280" role="img"><rect x="60" y="45" width="300" height="230" rx="12" fill="#fff" stroke="#d97706" stroke-width="3"/><rect x="60" y="45" width="300" height="45" rx="12" fill="#b45309"/><text x="210" y="74" text-anchor="middle" fill="#fff" style="fill:#fff">users</text><text x="85" y="125">id PK</text><text x="85" y="165">username</text><text x="85" y="205">email</text><text x="85" y="245">password_hash</text><rect x="640" y="45" width="300" height="230" rx="12" fill="#fff" stroke="#2563eb" stroke-width="3"/><rect x="640" y="45" width="300" height="45" rx="12" fill="#2563eb"/><text x="790" y="74" text-anchor="middle" fill="#fff" style="fill:#fff">orders</text><text x="665" y="125">id PK</text><text x="665" y="165">user_id FK</text><text x="665" y="205">product</text><text x="665" y="245">amount</text><defs><marker id="q" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b45309"/></marker></defs><line x1="360" y1="165" x2="640" y2="165" stroke="#b45309" stroke-width="4" marker-end="url(#q)"/><text x="500" y="145" text-anchor="middle">users.id → orders.user_id</text></svg></div><div class="code" data-lang="SQL"><code>SELECT * FROM users;
+SELECT username,email FROM users;
+SELECT DISTINCT role FROM users;
+INSERT INTO users(username,email,password_hash) VALUES ('alice','alice@example.com','hash');
+UPDATE users SET email='new@example.com' WHERE id=5;
+DELETE FROM users WHERE id=5;
+SELECT * FROM users WHERE role='admin';
+SELECT * FROM users WHERE email LIKE '%@gmail.com';</code></div><div class="code" data-lang="SQL"><code>SELECT * FROM users ORDER BY created_at DESC;
+SELECT role,COUNT(*) FROM users GROUP BY role;
+SELECT users.username,orders.product FROM users INNER JOIN orders ON users.id=orders.user_id;
+SELECT username FROM admins UNION SELECT username FROM users;
+SELECT * FROM users WHERE id IN (SELECT user_id FROM orders WHERE amount>1000);</code></div><div class="term"><strong>CRUD</strong><p>Create=INSERT, Read=SELECT, Update=UPDATE, Delete=DELETE. These four operations appear throughout web applications.</p></div><div class="security"><strong>SQL Injection</strong><p>SQLi occurs when untrusted input changes SQL syntax. A vulnerable login might concatenate input: <code>SELECT * FROM users WHERE username = '[INPUT]' AND password = '[INPUT]'</code>. A classic lab payload <code>' OR 1=1--</code> can make the condition true and comment out the rest.</p></div><div class="code" data-lang="Python"><code>import sqlite3
+conn=sqlite3.connect(":memory:")
+conn.execute("CREATE TABLE users(username TEXT,password_hash TEXT)")
+conn.execute("INSERT INTO users VALUES (?,?)",("alice","hash"))
+username=input("Username: ")
+row=conn.execute("SELECT username FROM users WHERE username=?",(username,)).fetchone()
+print(row)</code></div><table><tr><th>SQLi type</th><th>Description</th></tr><tr><td>In-band</td><td>Results through the same channel; UNION/error-based examples.</td></tr><tr><td>Blind</td><td>Boolean or timing behavior reveals information indirectly.</td></tr><tr><td>Out-of-band</td><td>Evidence/data uses a separate channel.</td></tr></table><div class="info"><strong>Safe practice</strong><p>Use intentionally vulnerable labs such as PortSwigger Web Security Academy and DVWA. sqlmap is a common automated SQLi testing tool and belongs in authorized environments only.</p></div></section><section id="s48"><h2>4.8 Git &amp; Version Control</h2><div class="definition"><strong>Git</strong><p>Distributed version control system. Each clone can contain history, enabling tracking, branching, merging, comparison and rollback. Git was created by Linus Torvalds in 2005 for Linux kernel development.</p></div><div class="grid"><div class="card"><h4>Repository</h4><p>Directory tracked by Git; .git stores repository metadata and history.</p></div><div class="card"><h4>Version control</h4><p>Records changes so versions can be compared and recalled.</p></div><div class="card"><h4>Local repository</h4><p>Your local history and commits.</p></div><div class="card"><h4>Remote repository</h4><p>Shared repository hosted on GitHub/GitLab.</p></div></div><div class="svg"><svg viewBox="0 0 1000 280" role="img"><defs><marker id="g" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b45309"/></marker></defs><rect x="20" y="100" width="180" height="70" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="3"/><text x="110" y="140" text-anchor="middle">Working Directory</text><rect x="280" y="100" width="150" height="70" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/><text x="355" y="140" text-anchor="middle">Staging</text><rect x="510" y="100" width="180" height="70" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/><text x="600" y="140" text-anchor="middle">Local Repository</text><rect x="770" y="100" width="200" height="70" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="3"/><text x="870" y="140" text-anchor="middle">GitHub / Remote</text><line x1="200" y1="135" x2="280" y2="135" stroke="#b45309" stroke-width="3" marker-end="url(#g)"/><text x="240" y="120" text-anchor="middle" font-size="12">git add</text><line x1="430" y1="135" x2="510" y2="135" stroke="#b45309" stroke-width="3" marker-end="url(#g)"/><text x="470" y="120" text-anchor="middle" font-size="12">git commit</text><line x1="690" y1="135" x2="770" y2="135" stroke="#b45309" stroke-width="3" marker-end="url(#g)"/><text x="730" y="120" text-anchor="middle" font-size="12">git push</text><path d="M870 185C870 245 110 245 110 180" fill="none" stroke="#7c3aed" stroke-width="3" marker-end="url(#g)"/><text x="490" y="265" text-anchor="middle">git pull → local → working directory</text></svg></div><div class="code" data-lang="Bash"><code>git init
+git clone https://github.com/user/repo.git
+git status
+git add file.py
+git add .
+git commit -m "Add port scanner script"
+git log --oneline
+git log --graph --oneline
+git diff
+git diff --staged</code></div><div class="code" data-lang="Bash"><code>git branch feature-scanner
+git switch feature-scanner
+git switch -c feature-logging
+git branch
+git switch main
+git merge feature-scanner
+git pull origin main
+git push origin main
+git push -u origin main</code></div><div class="info"><strong>Branching and merging</strong><p>Branches isolate work. Merge combines histories and may create conflicts if the same lines changed. Pull integrates remote work; push publishes local commits.</p></div><div class="code" data-lang="Bash"><code># .gitignore
+__pycache__/
+*.pyc
+.env
+node_modules/
+*.log
+.idea/
+.vscode/</code></div><div class="security"><strong>Git security considerations</strong><p>Never commit passwords, API keys, private keys or credentials. Use environment variables/secret management and ignore .env. Public repositories are searched for secrets. Removing a secret from the latest file does not erase it from history. An exposed /.git/ directory can leak source and history. Review pull requests and consider signed commits.</p></div><div class="tip"><strong>Cybersecurity portfolio</strong><p>Use GitHub for scripts, lab notes, sanitized sample data, detection content and READMEs. Only publish work you understand and can explain.</p></div></section><div style="text-align:center;font:700 1rem Merriweather,Georgia,serif;margin-top:55px">End of Module 4</div></main></div></body></html>

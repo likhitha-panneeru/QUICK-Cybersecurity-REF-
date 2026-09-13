@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Technologies</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Merriweather:wght@700;900&display=swap');
+:root{--primary:#0891b2;--primary-dark:#0e7490;--slate:#1e293b;--muted:#64748b;--bg:#f8fafc;--surface:#fff;--border:#cbd5e1;--green:#16a34a;--orange:#ea580c;--blue:#2563eb;--red:#dc2626;--purple:#7c3aed;--shadow:0 8px 24px rgba(15,23,42,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--slate);font-family:Inter,system-ui,sans-serif;line-height:1.72}.layout{display:flex;min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;width:275px;overflow:auto;background:#0f172a;color:#e2e8f0;padding:26px 20px}.sidebar h2{font-family:Merriweather,serif;font-size:20px;margin:0 0 18px;color:#fff}.sidebar a{display:block;color:#cbd5e1;text-decoration:none;padding:7px 10px;border-radius:7px;font-size:13px}.sidebar a:hover{background:#164e63;color:#fff}.main{width:min(1100px,100%);padding:42px 48px 70px;margin:auto}.hero{background:linear-gradient(135deg,#ecfeff,#fff);border:1px solid #a5f3fc;border-left:7px solid var(--primary);padding:30px;border-radius:16px;box-shadow:var(--shadow);margin-bottom:42px}.hero h1{font-family:Merriweather,serif;font-size:42px;line-height:1.2;margin:0 0 8px;color:#164e63}.hero p{margin:0;color:var(--muted)}section{scroll-margin-top:25px;margin:48px 0}h2{font-family:Merriweather,serif;font-size:29px;line-height:1.3;color:#164e63;border-bottom:2px solid #bae6fd;padding-bottom:9px}h3{font-family:Merriweather,serif;font-size:21px;color:#334155;margin-top:30px}h4{font-size:16px;color:#0e7490;margin-bottom:7px}.box{background:#fff;padding:17px 20px;margin:20px 0;border-radius:8px;box-shadow:0 2px 9px rgba(15,23,42,.05)}.definition{border-left:5px solid var(--green)}.key{border-left:5px solid var(--orange)}.info{border-left:5px solid var(--blue)}.security{border-left:5px solid var(--red);background:#fff7f7}.tip{border-left:5px solid var(--purple);background:#faf5ff}.box strong{color:#334155}.diagram{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px;overflow:auto;margin:22px 0;box-shadow:var(--shadow)}svg{width:100%;height:auto;min-width:680px}table{width:100%;border-collapse:collapse;background:#fff;margin:20px 0;box-shadow:var(--shadow);font-size:13px}th{background:#0e7490;color:#fff;text-align:left;padding:11px}td{border:1px solid #e2e8f0;padding:10px;vertical-align:top}tr:nth-child(even) td{background:#f8fafc}.code{position:relative;background:#0b1220;color:#dbeafe;border-radius:9px;padding:36px 18px 18px;overflow:auto;margin:18px 0;font:13px/1.65 "JetBrains Mono",monospace;white-space:pre}.code:before{content:attr(data-label);position:absolute;top:0;left:0;background:#164e63;color:#cffafe;padding:5px 10px;border-radius:8px 0 8px 0;font:600 11px Inter,sans-serif}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:20px 0}.card{background:#fff;border:1px solid #e2e8f0;border-top:4px solid var(--primary);padding:16px;border-radius:9px;box-shadow:var(--shadow)}.card b{font-family:JetBrains Mono,monospace;color:#0e7490}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:20px 0}.step{position:relative;background:#fff;border:1px solid #bae6fd;border-radius:9px;padding:15px 14px 14px 48px}.step .n{position:absolute;left:12px;top:14px;width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:26px;font-weight:700}.small{font-size:13px;color:var(--muted)}code{font-family:"JetBrains Mono",monospace;background:#e2e8f0;padding:1px 5px;border-radius:4px;font-size:.9em}ul,ol{padding-left:25px}.end{text-align:center;font-family:Merriweather,serif;color:#0e7490;font-size:18px;margin-top:55px}@media(max-width:850px){.sidebar{display:none}.main{padding:25px 18px 55px}.hero h1{font-size:32px}h2{font-size:25px}svg{min-width:620px}table{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<h2>Module 5<br>Web Technologies</h2>
+<a href="#s51">5.1 Internet &amp; Web</a><a href="#s52">5.2 URL</a><a href="#s53">5.3 HTTP</a><a href="#s54">5.4 HTTPS</a><a href="#s55">5.5 HTML</a><a href="#s56">5.6 CSS</a><a href="#s57">5.7 JavaScript</a><a href="#s58">5.8 Web Sessions</a><a href="#s59">5.9 Authentication</a><a href="#s510">5.10 Web Architecture</a><a href="#s511">5.11 APIs</a><a href="#s512">5.12 Web Security Concepts</a>
+</aside>
+<main class="main">
+<header class="hero"><h1>Web Technologies</h1><p>Module 5 — Internet, web protocols, application architecture, APIs, authentication, sessions and web security.</p></header>
+
+<section id="s51"><h2>5.1 Internet &amp; Web</h2>
+<div class="box definition"><strong>Internet:</strong> The Internet is a global network of interconnected networks using TCP/IP. It consists of physical infrastructure such as cables, routers, switches and servers spanning the globe. It is not owned by one entity; it is a collaboration among ISPs, governments and organizations.</div>
+<div class="box definition"><strong>World Wide Web:</strong> The WWW is a service that runs <em>on top of</em> the Internet: a system of interlinked hypertext documents accessed primarily through HTTP and browsers. Tim Berners-Lee invented the Web in 1989. The Web is not the Internet; email and FTP are other applications that use the same Internet infrastructure.</div>
+<div class="cards">
+<div class="card"><b>Client</b><br>A device or software that requests resources. Examples: browser, mobile app, Python HTTP script.</div>
+<div class="card"><b>Server</b><br>Device or software that provides resources in response to requests and waits for connections.</div>
+<div class="card"><b>Browser</b><br>Client application that requests HTML/CSS/JS, parses it and renders pages. DevTools expose Network, Console, Elements and Application views.</div>
+<div class="card"><b>Web Server</b><br>Handles HTTP requests and serves static content. Apache, Nginx and IIS commonly listen on ports 80 and 443.</div>
+<div class="card"><b>Application Server</b><br>Runs dynamic business logic using platforms such as Django, Flask, Express, Spring or Tomcat.</div>
+<div class="card"><b>Database Server</b><br>Stores and manages application data. MySQL, PostgreSQL, MongoDB, SQLite and Oracle are examples; databases should not be directly internet-exposed.</div>
+</div>
+<div class="diagram"><svg viewBox="0 0 1100 330" role="img" aria-label="Web architecture flow"><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0891b2"/></marker></defs>
+<g font-family="Inter" font-size="14" text-anchor="middle"><g fill="#ecfeff" stroke="#0891b2"><rect x="15" y="115" width="125" height="70" rx="10"/><rect x="170" y="115" width="125" height="70" rx="10"/><rect x="325" y="115" width="125" height="70" rx="10"/><rect x="480" y="115" width="145" height="70" rx="10"/><rect x="655" y="115" width="145" height="70" rx="10"/><rect x="830" y="115" width="145" height="70" rx="10"/></g>
+<text x="77" y="145">User / Browser</text><text x="77" y="166">Client</text><text x="232" y="145">Internet</text><text x="232" y="166">TCP/IP</text><text x="387" y="145">CDN</text><text x="387" y="166">optional cache</text><text x="552" y="145">Reverse Proxy /</text><text x="552" y="166">Load Balancer</text><text x="727" y="145">Web Server /</text><text x="727" y="166">App Server</text><text x="902" y="145">Database</text><text x="902" y="166">Server</text>
+<g stroke="#0891b2" stroke-width="2" marker-end="url(#a)"><line x1="140" y1="150" x2="170" y2="150"/><line x1="295" y1="150" x2="325" y2="150"/><line x1="450" y1="150" x2="480" y2="150"/><line x1="625" y1="150" x2="655" y2="150"/><line x1="800" y1="150" x2="830" y2="150"/></g>
+<g fill="#64748b" font-size="11"><text x="155" y="137">HTTP request</text><text x="310" y="137">request</text><text x="465" y="137">HTTP</text><text x="640" y="137">dynamic request</text><text x="815" y="137">SQL query / data</text></g></g></svg></div>
+<div class="box info"><strong>CDN:</strong> A Content Delivery Network uses geographically distributed edge servers to cache static resources such as images, CSS and JavaScript close to users, reducing latency and origin load. Cloudflare, Akamai and AWS CloudFront are examples. CDNs can also provide DDoS protection and WAF capabilities.</div>
+<div class="box definition"><strong>Proxy:</strong> An intermediary between a client and server. A forward proxy sits in front of clients and can hide client IPs, cache, filter and log activity. A reverse proxy sits in front of servers and can load-balance, terminate TLS, cache, compress, protect infrastructure and hide backend servers. Nginx, HAProxy and Cloudflare can perform reverse-proxy functions.</div>
+</section>
+
+<section id="s52"><h2>5.2 URL</h2>
+<div class="box definition"><strong>URL (Uniform Resource Locator):</strong> The address of a resource on the Web. It tells the browser where a resource is and how to retrieve it.</div>
+<div class="diagram"><svg viewBox="0 0 1100 240"><g font-family="JetBrains Mono" font-size="19" text-anchor="middle"><text x="550" y="45">https://www.example.com:443/products/search?q=laptop&amp;sort=price#results</text><g font-family="Inter" font-size="13"><text x="52" y="105">Scheme</text><text x="220" y="105">Host</text><text x="445" y="105">Port</text><text x="615" y="105">Path</text><text x="800" y="105">Query Parameters</text><text x="1020" y="105">Fragment</text></g><g stroke="#0891b2" stroke-width="3"><line x1="18" y1="70" x2="90" y2="70"/><line x1="92" y1="70" x2="355" y2="70"/><line x1="358" y1="70" x2="420" y2="70"/><line x1="423" y1="70" x2="695" y2="70"/><line x1="698" y1="70" x2="950" y2="70"/><line x1="953" y1="70" x2="1080" y2="70"/></g></g></svg></div>
+<div class="cards"><div class="card"><b>Scheme</b><br><code>http://</code> is unencrypted; <code>https://</code> uses TLS. Other schemes include FTP and SSH.</div><div class="card"><b>Host</b><br>The server name or IP. A domain may be resolved through DNS.</div><div class="card"><b>Port</b><br>The server's logical door. Defaults: 80 HTTP, 443 HTTPS; custom ports such as <code>localhost:8080</code> are explicit.</div><div class="card"><b>Path</b><br>Hierarchical resource or endpoint, such as <code>/products/search</code>.</div><div class="card"><b>Query</b><br>Key-value pairs after <code>?</code>, separated by <code>&amp;</code>. They are visible in history and logs, so never put passwords or sensitive data there.</div><div class="card"><b>Fragment</b><br>Part after <code>#</code>. It is normally not sent to the server and can support client-side navigation.</div></div>
+<div class="box security"><strong>URL encoding and security:</strong> Reserved/special characters can be percent-encoded as <code>%XX</code>: space <code>%20</code> or <code>+</code>, <code>&amp;</code> <code>%26</code>, <code>=</code> <code>%3D</code>, <code>/</code> <code>%2F</code>, <code>&lt;</code> <code>%3C</code>, <code>&gt;</code> <code>%3E</code>, <code>"</code> <code>%22</code>. Attackers may use encoding, double encoding such as <code>%2527</code>, or mixed encodings to evade weak filters.</div>
+</section>
+
+<section id="s53"><h2>5.3 HTTP</h2>
+<div class="box definition"><strong>HTTP (HyperText Transfer Protocol):</strong> An application-layer protocol that defines how clients request resources/actions and servers respond. HTTP is stateless: each request is independent unless an application adds state through mechanisms such as sessions and cookies. HTTP messages are designed to be readable textually.</div>
+<h3>Request</h3><p>A request contains a method, path/target, HTTP version, headers and an optional body.</p>
+<div class="code" data-label="HTTP">GET /api/users?role=admin HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0
+Accept: application/json
+Cookie: session=abc123
+Authorization: Bearer eyJhbG...</div>
+<h3>Response</h3><p>A response contains the HTTP version, status code/reason phrase, headers and an optional body.</p>
+<div class="code" data-label="HTTP">HTTP/1.1 200 OK
+Content-Type: application/json
+Set-Cookie: session=abc123; HttpOnly; Secure
+Content-Length: 245
+
+{"users": [{"id": 1, "name": "alice", "role": "admin"}]}</div>
+<h3>HTTP Methods</h3>
+<table><tr><th>Method</th><th>Purpose</th><th>Has Body</th><th>Idempotent</th><th>Security Notes</th></tr>
+<tr><td>GET</td><td>Retrieve a resource</td><td>No</td><td>Yes</td><td>Parameters are visible in URL; never use for sensitive data.</td></tr><tr><td>POST</td><td>Submit data/create a resource</td><td>Yes</td><td>No</td><td>Used for forms, login, uploads and API calls; body is not encrypted without HTTPS.</td></tr><tr><td>PUT</td><td>Replace/update entire resource</td><td>Yes</td><td>Yes</td><td>Send the complete updated representation.</td></tr><tr><td>PATCH</td><td>Partially update resource</td><td>Yes</td><td>No</td><td>Send only changed fields.</td></tr><tr><td>DELETE</td><td>Remove a resource</td><td>Optional</td><td>Yes</td><td>Should require appropriate authorization.</td></tr><tr><td>HEAD</td><td>Like GET but headers only</td><td>No</td><td>Yes</td><td>Useful for metadata/existence checks without downloading body.</td></tr><tr><td>OPTIONS</td><td>Ask what methods/headers are allowed</td><td>No</td><td>Yes</td><td>Used in CORS preflight requests.</td></tr></table>
+<h3>Status Codes</h3>
+<div class="cards"><div class="card"><b>1xx</b><br>100 Continue — headers received; server can accept body.<br>101 Switching Protocols — protocol upgrade such as WebSocket.</div><div class="card"><b>2xx</b><br>200 OK; 201 Created; 204 No Content.</div><div class="card"><b>3xx</b><br>301 Moved Permanently; 302 Found; 304 Not Modified.</div><div class="card"><b>4xx</b><br>400 Bad Request; 401 Unauthorized; 403 Forbidden; 404 Not Found; 405 Method Not Allowed; 429 Too Many Requests.</div><div class="card"><b>5xx</b><br>500 Internal Server Error; 502 Bad Gateway; 503 Service Unavailable.</div></div>
+<div class="box security"><strong>Security:</strong> Verbose error messages can leak stack traces, file paths, database details and server information. Production applications should return generic error pages while logging useful diagnostic detail securely on the server.</div>
+<h3>Headers</h3>
+<table><tr><th>Header</th><th>Meaning</th><th>Security relevance</th></tr>
+<tr><td>Host</td><td>Identifies the requested domain; required in HTTP/1.1 and supports virtual hosting.</td><td>Host header injection can influence redirects or server-side requests when applications trust it.</td></tr>
+<tr><td>Content-Type</td><td>Describes body format: HTML, JSON, form data, multipart data.</td><td>Incorrect type handling can contribute to MIME-sniffing and parsing issues.</td></tr>
+<tr><td>User-Agent</td><td>Identifies browser/OS/client.</td><td>Can be spoofed; often logged and used for client-specific behavior.</td></tr>
+<tr><td>Referer</td><td>URL of the page that linked to the current request; spelling is defined by the HTTP standard.</td><td>Can leak sensitive URL data; Referrer-Policy controls exposure.</td></tr>
+<tr><td>Authorization</td><td>Carries credentials such as Basic or Bearer credentials.</td><td>Basic is base64 encoding, not encryption; tokens must be protected from theft/XSS.</td></tr>
+<tr><td>Cookie</td><td>Sends stored cookies to the domain.</td><td>Session IDs in stolen cookies can enable session hijacking.</td></tr>
+<tr><td>Set-Cookie</td><td>Instructs browser to store a cookie and may define Secure, HttpOnly, SameSite and other attributes.</td><td>Cookie attributes are central to session security.</td></tr>
+<tr><td>Body / Content-Length</td><td>Body carries form data, JSON, XML, files or response content; Content-Length specifies size.</td><td>Applications must validate and safely parse body content.</td></tr></table>
+</section>
+
+<section id="s54"><h2>5.4 HTTPS</h2>
+<table><tr><th>Aspect</th><th>HTTP</th><th>HTTPS</th></tr><tr><td>Protocol</td><td>HTTP</td><td>HTTP over TLS</td></tr><tr><td>Port</td><td>80</td><td>443</td></tr><tr><td>Encryption</td><td>Plaintext</td><td>TLS encrypted</td></tr><tr><td>URL</td><td>http://</td><td>https://</td></tr><tr><td>Security</td><td>Network observers can read/modify traffic.</td><td>Protects confidentiality and integrity in transit and authenticates the server through certificates.</td></tr><tr><td>Certificate</td><td>Not required</td><td>Uses a TLS certificate.</td></tr><tr><td>Usage</td><td>Legacy/unprotected</td><td>Modern standard for websites, especially sensitive traffic.</td></tr></table>
+<div class="box definition"><strong>TLS:</strong> Transport Layer Security is a cryptographic protocol providing encryption, authentication and integrity for network communications. TLS 1.3 is the current modern version. SSL (Secure Sockets Layer) is the predecessor; SSL 2.0 and 3.0 are obsolete and insecure. The phrase “SSL certificate” commonly refers to a TLS certificate.</div>
+<div class="box definition"><strong>Certificate:</strong> An X.509 digital document containing information such as the server/domain identity, public key, issuer, validity dates and the issuer's digital signature. A browser validates it to establish that it is communicating with the intended server.</div>
+<div class="box info"><strong>Certificate Authority:</strong> A trusted CA issues certificates. The browser trusts a built-in set of root CAs. A typical chain is Root CA → Intermediate CA → Server Certificate. Examples of certificate authorities include Let's Encrypt, DigiCert and Comodo.</div>
+<div class="cards"><div class="card"><b>Public Key</b><br>Included in the certificate. Used in public-key cryptography and signature verification.</div><div class="card"><b>Private Key</b><br>Secret server-side key. It must never be shared; compromise can allow server impersonation and undermine connection security.</div></div>
+<h3>TLS Handshake</h3>
+<div class="steps"><div class="step"><span class="n">1</span><b>Client Hello</b><br>Supported TLS versions, cipher suites and random material.</div><div class="step"><span class="n">2</span><b>Server Hello</b><br>Chosen parameters plus the server certificate.</div><div class="step"><span class="n">3</span><b>Certificate Verification</b><br>Browser checks trust chain, hostname, validity and applicable revocation status.</div><div class="step"><span class="n">4</span><b>Key Exchange</b><br>TLS 1.3 uses ephemeral Diffie-Hellman key exchange to establish shared keying material.</div><div class="step"><span class="n">5</span><b>Secure Connection</b><br>Subsequent application data uses fast symmetric cryptography.</div></div>
+<div class="diagram"><svg viewBox="0 0 1050 310"><defs><marker id="b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0891b2"/></marker></defs><g font-family="Inter"><text x="260" y="28" font-weight="700" font-size="18">Client</text><text x="760" y="28" font-weight="700" font-size="18">Server</text><line x1="260" y1="45" x2="260" y2="285" stroke="#94a3b8"/><line x1="760" y1="45" x2="760" y2="285" stroke="#94a3b8"/><g stroke="#0891b2" stroke-width="2" marker-end="url(#b)"><line x1="275" y1="70" x2="745" y2="70"/><line x1="745" y1="125" x2="275" y2="125"/><line x1="275" y1="180" x2="745" y2="180"/><line x1="745" y1="235" x2="275" y2="235"/></g><g font-size="13" text-anchor="middle"><text x="510" y="62">ClientHello</text><text x="510" y="117">ServerHello + certificate</text><text x="510" y="172">Certificate verification / key exchange</text><text x="510" y="227">Encrypted application data</text></g></g></svg></div>
+<div class="box security"><strong>Certificate validation:</strong> Browsers check CA trust, hostname matching, expiration and applicable revocation information. A failure can trigger a “Your connection is not private” warning. Do not click through certificate warnings. HTTPS protects traffic in transit; it does not make an insecure application automatically secure.</div>
+</section>
+
+<section id="s55"><h2>5.5 HTML</h2>
+<div class="box definition"><strong>HTML:</strong> HyperText Markup Language is the standard markup language for creating web pages. It describes structure and content using elements and tags. HTML is not a programming language.</div>
+<div class="box key"><strong>Elements, tags and attributes:</strong> An element can have an opening tag, content and closing tag, e.g. <code>&lt;p&gt;Hello world&lt;/p&gt;</code>. Some elements such as <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> do not require a closing tag. Attributes add information, e.g. <code>&lt;a href="https://example.com" target="_blank"&gt;Link&lt;/a&gt;</code>.</div>
+<h3>Forms, Inputs, Links and Images</h3>
+<p>Forms collect user input and submit it to a server. <code>&lt;form action="/login" method="POST"&gt;</code> defines destination and method. Inputs include text, password, email, number, file, hidden, checkbox, radio and submit. Links use <code>&lt;a href="URL"&gt;</code>; images use <code>&lt;img src="URL" alt="description"&gt;</code>.</p>
+<div class="box security"><strong>Security relevance:</strong> Forms are major attack surfaces. Never trust hidden inputs such as <code>&lt;input type="hidden" name="admin" value="false"&gt;</code>; users can modify them in DevTools. File uploads require strict validation and safe storage. Event-handler attributes such as <code>onclick</code>, <code>onload</code> and <code>onerror</code> can become XSS vectors. User-controlled links can enable open redirects. External images can also be abused for tracking or data exfiltration; an <code>onerror</code> handler can be an XSS vector.</div>
+<h3>DOM</h3>
+<div class="box definition"><strong>DOM (Document Object Model):</strong> The browser's object-tree representation of an HTML document. JavaScript can read and modify DOM nodes using methods such as <code>document.getElementById()</code> and <code>document.querySelector()</code>. DOM-based XSS can occur when attacker-controlled sources such as <code>location.hash</code>, <code>location.search</code> or <code>document.referrer</code> reach dangerous sinks such as <code>innerHTML</code>, <code>document.write()</code> or <code>eval()</code>.</div>
+<div class="box info"><strong>HTML encoding:</strong> Encode special characters before inserting untrusted data into HTML. Characters such as <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, quotes and apostrophes have HTML-safe representations. Correct context-specific encoding turns injected markup into data rather than executable markup.</div>
+</section>
+
+<section id="s56"><h2>5.6 CSS</h2>
+<div class="box definition"><strong>CSS:</strong> Cascading Style Sheets controls visual presentation: colors, fonts, spacing, layout and animation. HTML provides structure; CSS provides style.</div>
+<h3>Selectors and Properties</h3>
+<p>Selectors target elements: <code>p {}</code>, <code>.classname {}</code>, <code>#id {}</code>, <code>input[type="password"] {}</code>, <code>div p {}</code> and pseudo-classes such as <code>a:hover {}</code>. Properties include <code>color</code>, <code>font-size</code>, <code>background-color</code>, <code>border</code>, <code>padding</code>, <code>margin</code>, <code>display</code> and <code>position</code>.</p>
+<div class="box security"><strong>CSS security:</strong> CSS is not normally a security boundary, but security testers should understand CSS injection, UI redressing/clickjacking and CSS-based data exfiltration. For example, carefully crafted attribute selectors can sometimes infer characters in input values by causing network requests.</div>
+<h3>Layout and Responsive Design</h3>
+<p>The box model consists of content + padding + border + margin. Common display systems are block, inline, flex and grid; positioning includes static, relative, absolute, fixed and sticky. Responsive design uses fluid sizing, viewport configuration and media queries such as <code>@media (max-width: 768px)</code>.</p>
+<h3>Browser Rendering</h3>
+<div class="steps"><div class="step"><span class="n">1</span><b>Parse HTML</b><br>Create DOM.</div><div class="step"><span class="n">2</span><b>Parse CSS</b><br>Create CSSOM.</div><div class="step"><span class="n">3</span><b>Combine</b><br>Create render tree.</div><div class="step"><span class="n">4</span><b>Layout</b><br>Calculate positions and dimensions.</div><div class="step"><span class="n">5</span><b>Paint</b><br>Draw pixels to the screen.</div></div>
+</section>
+
+<section id="s57"><h2>5.7 JavaScript (Web Security Context)</h2>
+<div class="box definition"><strong>Client-side JavaScript:</strong> JavaScript delivered to and executed by the browser. Users can inspect and modify it, so client-side validation and security logic cannot be trusted. Never place secrets or security decisions solely in client-side code.</div>
+<h3>DOM Manipulation and Events</h3>
+<div class="code" data-label="JavaScript">document.getElementById("output").innerHTML = userInput;</div>
+<p>If <code>userInput</code> is untrusted HTML, assigning it to <code>innerHTML</code> can create DOM-based XSS. Prefer <code>textContent</code> when inserting plain text. Events include click, submit, keypress, load, error, mouseover, focus and blur; event listeners can be registered with <code>addEventListener()</code>.</p>
+<div class="box security"><strong>Event-handler security:</strong> HTML event attributes such as <code>&lt;body onload="malicious()"&gt;</code> and <code>&lt;img onerror="malicious()"&gt;</code> are dangerous XSS sinks when attacker-controlled content reaches them.</div>
+<h3>Cookies, Local Storage and Session Storage</h3>
+<div class="cards"><div class="card"><b>document.cookie</b><br>Reads non-HttpOnly cookies and can set cookies. XSS can abuse readable cookies, which is why HttpOnly is important.</div><div class="card"><b>localStorage</b><br>Key-value storage with no automatic expiration. It is not sent with HTTP requests and is readable by JavaScript on the same origin.</div><div class="card"><b>sessionStorage</b><br>Similar API but scoped to a browser tab/session. It remains readable by same-origin JavaScript and therefore is not safe for secrets against XSS.</div></div>
+<div class="code" data-label="JavaScript">document.cookie = "name=value; path=/; secure";
+localStorage.setItem("key","value");
+sessionStorage.setItem("key","value");</div>
+<h3>Fetch API and AJAX</h3>
+<div class="code" data-label="JavaScript">fetch("https://api.example.com/data", {
+  method: "GET",
+  headers: {"Authorization": "Bearer token"}
+}).then(r => r.json()).then(data => console.log(data));</div>
+<p>Fetch is the modern browser API for HTTP requests and supports methods, headers and request bodies. AJAX means making asynchronous HTTP requests without a full page reload; modern applications generally use Fetch rather than the older XMLHttpRequest. Cross-origin requests are constrained by browser security and CORS.</p>
+<h3>Same-Origin Policy</h3>
+<div class="box security"><strong>SOP:</strong> The Same-Origin Policy restricts how scripts from one origin interact with another. An origin is scheme + host + port, so <code>https://example.com:443</code> and <code>http://example.com:80</code> are different origins. SOP is enforced by browsers and prevents cross-origin DOM access and reading protected cross-origin responses. XSS is dangerous because injected JavaScript executes in the victim origin and therefore operates within that origin's privileges.</div>
+</section>
+
+<section id="s58"><h2>5.8 Web Sessions</h2>
+<div class="box definition"><strong>Session:</strong> A mechanism that maintains state across multiple HTTP requests. Because HTTP is stateless, applications use sessions so the server can remember an authenticated user across requests.</div>
+<div class="box key"><strong>Session ID:</strong> A unique, random and unpredictable identifier associated with server-side session data. If an attacker guesses or steals it, they may impersonate the user.</div>
+<div class="diagram"><svg viewBox="0 0 1100 330"><defs><marker id="c" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0891b2"/></marker></defs><g font-family="Inter" font-size="13"><rect x="30" y="110" width="160" height="70" rx="10" fill="#ecfeff" stroke="#0891b2"/><rect x="235" y="110" width="160" height="70" rx="10" fill="#ecfeff" stroke="#0891b2"/><rect x="440" y="110" width="190" height="70" rx="10" fill="#ecfeff" stroke="#0891b2"/><rect x="675" y="110" width="160" height="70" rx="10" fill="#ecfeff" stroke="#0891b2"/><rect x="880" y="110" width="180" height="70" rx="10" fill="#ecfeff" stroke="#0891b2"/><text x="110" y="140" text-anchor="middle">Login credentials</text><text x="110" y="161" text-anchor="middle">from user</text><text x="315" y="140" text-anchor="middle">Server authenticates</text><text x="315" y="161" text-anchor="middle">identity</text><text x="535" y="140" text-anchor="middle">Creates session</text><text x="535" y="161" text-anchor="middle">ID + user data</text><text x="755" y="140" text-anchor="middle">Set-Cookie</text><text x="755" y="161" text-anchor="middle">session_id=abc123</text><text x="970" y="140" text-anchor="middle">Browser stores</text><text x="970" y="161" text-anchor="middle">cookie</text><g stroke="#0891b2" stroke-width="2" marker-end="url(#c)"><line x1="190" y1="145" x2="235" y2="145"/><line x1="395" y1="145" x2="440" y2="145"/><line x1="630" y1="145" x2="675" y2="145"/><line x1="835" y1="145" x2="880" y2="145"/></g><path d="M970 195 C970 275 110 275 110 195" fill="none" stroke="#0891b2" stroke-width="2" marker-end="url(#c)"/><text x="540" y="265" text-anchor="middle">Subsequent requests: Cookie: session_id=abc123 → server looks up user data → user remains logged in</text></g></svg></div>
+<div class="box definition"><strong>Cookies:</strong> Small browser-stored data sent with requests to a matching domain/path. <code>Set-Cookie</code> creates them; <code>Cookie</code> sends them. Attributes include Domain, Path, Expires/Max-Age, Secure, HttpOnly and SameSite.</div>
+<div class="cards"><div class="card"><b>Session cookie</b><br>No Expires/Max-Age; generally removed when the browser closes.</div><div class="card"><b>Persistent cookie</b><br>Has Expires/Max-Age and can survive browser restarts; useful for remember-me features but increases exposure window.</div><div class="card"><b>Session expiration</b><br>Idle timeout ends after inactivity; absolute timeout ends after a maximum lifetime.</div></div>
+<div class="box security"><strong>Session fixation:</strong> An attacker causes a victim to use a known session ID before authentication. Regenerate the session ID after login.<br><br><strong>Session hijacking:</strong> An attacker steals a valid session ID through XSS, insecure transport or other means. Use HTTPS and Secure/HttpOnly cookie protections.<br><br><strong>Session prediction:</strong> Weak predictable IDs can be guessed. Use cryptographically random identifiers of sufficient length.</div>
+</section>
+
+<section id="s59"><h2>5.9 Authentication</h2>
+<div class="box definition"><strong>Authentication:</strong> The process of verifying a user's identity. Login is a major attack surface because credentials can be targeted by brute force, dictionaries, credential stuffing and password spraying.</div>
+<div class="box security"><strong>Passwords:</strong> Store passwords as salted, adaptive password hashes rather than plaintext or reversible encryption. Algorithms such as Argon2, scrypt and bcrypt are designed for password hashing. Defenses include rate limiting, MFA, strong password practices and detection of credential abuse.</div>
+<h3>MFA and OTP</h3>
+<p>MFA requires two or more different factors: something you know, something you have, or something you are. TOTP generates time-based codes in authenticator applications; HOTP uses a counter. SMS OTP is weaker because SIM-swap attacks can compromise the phone number, although it can still be better than password-only authentication.</p>
+<h3>Authentication Tokens</h3>
+<p>After login, an application may issue an opaque or structured token that the client presents on subsequent requests. Tokens may be carried in an Authorization header or protected cookie.</p>
+<table><tr><th>Sessions</th><th>Tokens</th></tr><tr><td>Server stores session state; client holds a session ID.</td><td>Often self-contained; server can validate token integrity without a per-session lookup.</td></tr><tr><td>Traditional stateful model.</td><td>Common in APIs and SPAs.</td></tr></table>
+<h3>JWT</h3>
+<div class="box definition"><strong>JSON Web Token:</strong> A compact token with three Base64URL-encoded parts separated by dots: Header.Payload.Signature. The header describes the algorithm/type; payload contains claims; signature provides integrity/authenticity when correctly verified.</div>
+<div class="code" data-label="JSON">Header:
+{"alg":"HS256","typ":"JWT"}
+
+Payload:
+{"sub":"user123","name":"alice","role":"admin","exp":1234567890}
+
+Token:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMTIzIiwibmFtZSI6ImFsaWNlIiwicm9sZSI6ImFkbWluIn0.SIGNATURE</div>
+<div class="box security"><strong>JWT security:</strong> Base64URL encoding is not encryption, so payloads are readable. Do not place passwords or secrets in them. Validate the expected algorithm and signature correctly; algorithm-confusion/“none” mistakes and weak HMAC secrets can undermine verification. JWTs also require deliberate expiry/revocation design because a valid issued token may remain usable until it expires or is otherwise invalidated.</div>
+<h3>OAuth 2.0</h3>
+<div class="box definition"><strong>OAuth 2.0:</strong> An authorization framework that lets a user grant a third-party application limited access without sharing the user's password with that application. “Sign in with Google” commonly involves related authorization and identity technologies; OAuth itself is authorization, not authentication.</div>
+<div class="steps"><div class="step"><span class="n">1</span><b>User starts login</b><br>App redirects to authorization server.</div><div class="step"><span class="n">2</span><b>Consent</b><br>User authenticates and grants requested permissions.</div><div class="step"><span class="n">3</span><b>Authorization code</b><br>Authorization server redirects back with a code.</div><div class="step"><span class="n">4</span><b>Token exchange</b><br>App exchanges the code at the token endpoint.</div><div class="step"><span class="n">5</span><b>Resource access</b><br>App uses access token for permitted resources.</div></div>
+<div class="box info"><strong>Grant types:</strong> Authorization Code is the modern general-purpose flow; Implicit is legacy and deprecated for modern applications; Client Credentials is for machine-to-machine access; Resource Owner Password Credentials is legacy and should not be used in new designs.</div>
+<h3>OIDC and SSO</h3>
+<p><strong>OpenID Connect (OIDC)</strong> adds an authentication/identity layer on top of OAuth 2.0 and can return an ID token containing identity claims. <strong>Single Sign-On (SSO)</strong> lets a user authenticate once and access multiple applications. Enterprise deployments commonly use SAML or OIDC. SSO reduces repeated password entry but makes the central identity account especially important to protect.</p>
+</section>
+
+<section id="s510"><h2>5.10 Web Architecture</h2>
+<div class="diagram"><svg viewBox="0 0 1100 420"><defs><marker id="d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0891b2"/></marker></defs><g font-family="Inter" text-anchor="middle"><g fill="#ecfeff" stroke="#0891b2"><rect x="35" y="170" width="115" height="65" rx="9"/><rect x="180" y="170" width="115" height="65" rx="9"/><rect x="325" y="170" width="115" height="65" rx="9"/><rect x="470" y="170" width="115" height="65" rx="9"/><rect x="615" y="170" width="115" height="65" rx="9"/><rect x="760" y="170" width="130" height="65" rx="9"/><rect x="920" y="170" width="140" height="65" rx="9"/></g><text x="92" y="197">Browser</text><text x="92" y="218">Client</text><text x="237" y="197">Internet</text><text x="237" y="218">HTTP</text><text x="382" y="197">CDN</text><text x="382" y="218">Edge cache</text><text x="527" y="197">WAF</text><text x="527" y="218">Filter</text><text x="672" y="197">Load</text><text x="672" y="218">Balancer</text><text x="825" y="197">Reverse Proxy</text><text x="825" y="218">Nginx / TLS</text><text x="990" y="197">App + Database</text><text x="990" y="218">backend</text><g stroke="#0891b2" stroke-width="2" marker-end="url(#d)"><line x1="150" y1="202" x2="180" y2="202"/><line x1="295" y1="202" x2="325" y2="202"/><line x1="440" y1="202" x2="470" y2="202"/><line x1="585" y1="202" x2="615" y2="202"/><line x1="730" y1="202" x2="760" y2="202"/><line x1="890" y1="202" x2="920" y2="202"/></g><rect x="420" y="300" width="260" height="70" rx="10" fill="#f0fdf4" stroke="#16a34a"/><text x="550" y="328">Database</text><text x="550" y="350">persistent data / least privilege</text><line x1="990" y1="235" x2="550" y2="300" stroke="#16a34a" stroke-width="2" marker-end="url(#d)"/></g></svg></div>
+<div class="cards"><div class="card"><b>Client</b><br>Sends requests, renders responses and executes client-side JavaScript. XSS can abuse its origin privileges.</div><div class="card"><b>Web Server</b><br>Serves static files and proxies dynamic requests. Harden configuration, disable unnecessary modules/directory listing and patch software.</div><div class="card"><b>Application Server</b><br>Runs business logic, authentication and data processing. Common vulnerability classes include SQL injection, command injection, SSRF and logic flaws.</div><div class="card"><b>Database</b><br>Stores persistent data. Avoid direct internet exposure, use least-privileged accounts and parameterized queries.</div></div>
+<h3>API, Microservices, Load Balancing, Reverse Proxy, CDN and WAF</h3>
+<p>An <strong>API</strong> defines how software components communicate, commonly using HTTP and JSON. <strong>Microservices</strong> split an application into independently deployable services, such as user, payment and notification services, increasing flexibility but also the number of security boundaries.</p>
+<p>A <strong>load balancer</strong> distributes traffic across backends using methods such as round robin, least connections or IP hash. It can operate at Layer 4 or Layer 7 and supports high availability. A <strong>reverse proxy</strong> can terminate TLS, cache, compress and centralize logging/access control. A <strong>CDN</strong> caches content at the edge. A <strong>WAF</strong> inspects HTTP traffic and can block patterns associated with SQL injection, XSS, path traversal, command injection and malicious uploads.</p>
+<div class="box security"><strong>WAF limitation:</strong> A WAF is defense in depth, not a replacement for secure coding. Encoding tricks, obfuscation and novel attack patterns can bypass rule-based defenses.</div>
+</section>
+
+<section id="s511"><h2>5.11 APIs</h2>
+<div class="box definition"><strong>API:</strong> An Application Programming Interface is a defined set of rules and protocols for software components to communicate. Web APIs commonly expose HTTP endpoints and return structured data such as JSON. Frontends, mobile applications, backend services and third-party integrations depend on APIs.</div>
+<h3>REST and SOAP</h3>
+<div class="box info"><strong>REST:</strong> Representational State Transfer is a dominant architectural style for web APIs. REST APIs are commonly stateless, resource-oriented and use standard HTTP methods with JSON representations.</div>
+<div class="code" data-label="HTTP">GET    /api/users
+GET    /api/users/123
+POST   /api/users
+PUT    /api/users/123
+DELETE /api/users/123</div>
+<div class="box key"><strong>SOAP:</strong> Simple Object Access Protocol is an older XML-based web-service protocol with strict standards such as WSDL. It remains common in enterprise, banking and government legacy systems and has WS-Security for message-level security.</div>
+<h3>JSON and XML</h3>
+<div class="code" data-label="JSON">{
+  "name": "alice",
+  "age": 25,
+  "roles": ["admin", "user"],
+  "active": true
+}</div>
+<p>JSON supports objects, arrays, strings, numbers, booleans and null. XML uses tags, for example <code>&lt;user&gt;&lt;name&gt;alice&lt;/name&gt;&lt;age&gt;25&lt;/age&gt;&lt;/user&gt;</code>. XML parsers must be configured safely because XXE can expose local files, enable SSRF or cause denial of service.</p>
+<h3>REST Methods with Bodies</h3>
+<div class="code" data-label="HTTP">POST /api/users HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+Authorization: Bearer eyJhbG...
+
+{"name":"alice","role":"user"}</div>
+<div class="code" data-label="HTTP">PUT /api/users/123 HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+Authorization: Bearer eyJhbG...
+
+{"name":"alice","role":"admin","active":true}</div>
+<h3>API Authentication</h3>
+<table><tr><th>Method</th><th>Example</th><th>Security</th></tr><tr><td>API Key</td><td><code>X-API-Key: abc123</code></td><td>Identifies an application; if leaked, anyone may use it. Treat as a secret. Avoid putting sensitive keys in URLs.</td></tr><tr><td>Bearer Token</td><td><code>Authorization: Bearer eyJhbG...</code></td><td>Often issued after authentication; can expire and be scoped.</td></tr><tr><td>OAuth 2.0</td><td>Access token with scopes</td><td>Delegated authorization framework; supports limited permissions.</td></tr><tr><td>Basic Auth</td><td><code>Authorization: Basic YWxpY2U6cGFzc3dvcmQ=</code></td><td>Base64 encoding is not encryption; credentials must be protected with HTTPS.</td></tr></table>
+<h3>Rate Limiting</h3>
+<div class="box definition"><strong>Rate limiting:</strong> Restricts request volume per time window, such as 100 requests/minute. Limits can be based on IP, API key or user. Excess requests commonly receive <code>429 Too Many Requests</code>, optionally with <code>Retry-After</code>. Rate limiting helps resist brute force, scraping, abuse and resource exhaustion.</div>
+<div class="box security"><strong>API Security Checklist:</strong><ol><li>Always use HTTPS.</li><li>Authenticate every protected request.</li><li>Authorize every sensitive action.</li><li>Validate all input server-side.</li><li>Rate limit all endpoints, especially login.</li><li>Return only necessary data.</li><li>Use parameterized database queries.</li><li>Log requests for security monitoring.</li><li>Version APIs such as <code>/api/v1/</code> so insecure versions can be deprecated.</li><li>Use the OWASP API Security Top 10 as a comprehensive reference.</li></ol></div>
+</section>
+
+<section id="s512"><h2>5.12 Web Security Concepts</h2>
+<div class="box definition"><strong>Same-Origin Policy:</strong> A fundamental browser security mechanism based on scheme + host + port. It restricts scripts from reading/interacting with data across origins. SOP does not stop every cross-origin request: browsers can load resources such as images, scripts and styles, and forms can submit cross-origin requests; the key protection is restricting cross-origin access to protected data and DOMs.</div>
+<h3>CORS</h3>
+<div class="box definition"><strong>Cross-Origin Resource Sharing:</strong> A controlled mechanism for relaxing SOP. The server uses response headers to tell the browser which origins may read responses.</div>
+<div class="code" data-label="HTTP">Access-Control-Allow-Origin: https://trusted-app.com
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Headers: Authorization, Content-Type
+Access-Control-Allow-Credentials: true</div>
+<p>For non-simple cross-origin requests, the browser can send an OPTIONS preflight before the actual request. <code>Access-Control-Allow-Origin: *</code> permits all origins and is inappropriate for many sensitive endpoints. Reflecting arbitrary Origin values while allowing credentials can expose authenticated responses to attacker-controlled sites.</p>
+<h3>CSRF</h3>
+<div class="box definition"><strong>Cross-Site Request Forgery:</strong> An attack that causes a logged-in user's browser to submit an unwanted request to a site where the user is authenticated. Browsers may automatically attach cookies to the target site's request.</div>
+<div class="diagram"><svg viewBox="0 0 1050 330"><defs><marker id="e" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#dc2626"/></marker></defs><g font-family="Inter" text-anchor="middle"><rect x="25" y="110" width="190" height="70" rx="10" fill="#eff6ff" stroke="#2563eb"/><rect x="285" y="110" width="180" height="70" rx="10" fill="#fef2f2" stroke="#dc2626"/><rect x="535" y="110" width="190" height="70" rx="10" fill="#fef2f2" stroke="#dc2626"/><rect x="795" y="110" width="220" height="70" rx="10" fill="#fff7ed" stroke="#ea580c"/><text x="120" y="139">Victim logged in</text><text x="120" y="160">bank.com</text><text x="375" y="139">Visits evil.com</text><text x="375" y="160">attacker page</text><text x="630" y="139">Hidden form targets</text><text x="630" y="160">bank.com</text><text x="905" y="139">Browser sends request</text><text x="905" y="160">WITH bank cookies</text><g stroke="#dc2626" stroke-width="2" marker-end="url(#e)"><line x1="215" y1="145" x2="285" y2="145"/><line x1="465" y1="145" x2="535" y2="145"/><line x1="725" y1="145" x2="795" y2="145"/></g><text x="525" y="250" font-size="15">If the bank accepts the forged state-changing request, the attack succeeds.</text></g></svg></div>
+<div class="box info"><strong>CSRF defenses:</strong> anti-CSRF tokens verified server-side, appropriate SameSite cookies, checking Origin/Referer where suitable, and re-authentication for especially sensitive actions.</div>
+<h3>CSP</h3>
+<div class="box definition"><strong>Content Security Policy:</strong> An HTTP response policy that restricts which sources the browser may load or execute for scripts, styles, images, frames and other content. It is an important defense-in-depth control against XSS.</div>
+<div class="code" data-label="HTTP">Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.example.com; style-src 'self' 'unsafe-inline'; img-src *</div>
+<p>A strict policy can prevent unauthorized scripts from executing even when an injection flaw exists. <code>'unsafe-inline'</code> weakens script/style restrictions, while <code>'unsafe-eval'</code> permits dangerous dynamic evaluation and should be avoided where possible. CSP violation reporting can support monitoring.</p>
+<h3>Cookie Security Attributes</h3>
+<table><tr><th>Attribute</th><th>What It Does</th><th>Why It Matters</th></tr><tr><td>Secure</td><td>Cookie is sent only over HTTPS.</td><td>Reduces exposure through unencrypted HTTP.</td></tr><tr><td>HttpOnly</td><td>Prevents JavaScript access through <code>document.cookie</code>.</td><td>Limits direct cookie theft through XSS.</td></tr><tr><td>SameSite</td><td>Controls cross-site cookie sending. Strict is strongest; Lax is a common default; None permits cross-site sending and requires Secure.</td><td>Important CSRF protection.</td></tr><tr><td>Domain</td><td>Controls which domains receive the cookie.</td><td>Overly broad scope can expose cookies to more subdomains.</td></tr><tr><td>Path</td><td>Controls URL paths receiving the cookie.</td><td>Limits cookie scope.</td></tr><tr><td>Expires / Max-Age</td><td>Controls lifetime.</td><td>Shorter lifetimes reduce the window for theft.</td></tr></table>
+<h3>Input Validation</h3>
+<div class="box definition"><strong>Input validation:</strong> Check that input matches the expected type, length, range, format and allowed characters before processing. Prefer allowlists over blocklists. Validation must happen server-side because client-side checks can be bypassed. Validation reduces risk from SQL injection, XSS, command injection, path traversal and other injection classes.</div>
+<h3>Output Encoding</h3>
+<div class="box definition"><strong>Output encoding:</strong> Transform untrusted data into a safe representation before inserting it into a specific output context. HTML, URL, JavaScript and CSS contexts require different encoding rules. Proper contextual encoding makes data remain data rather than executable code.</div>
+<div class="code" data-label="HTML">User input:
+&lt;script&gt;alert(1)&lt;/script&gt;
+
+Safely HTML-encoded output:
+&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;</div>
+<div class="box security"><strong>Web Security Defense Layers:</strong><ol><li>Input Validation — reject bad data at the boundary.</li><li>Output Encoding — neutralize data before rendering.</li><li>Parameterized Queries — prevent SQL injection.</li><li>CSRF Tokens — prevent forged state-changing requests.</li><li>CSP Headers — restrict executable content.</li><li>Cookie Flags — Secure, HttpOnly and SameSite for authentication cookies.</li><li>HTTPS Everywhere — encrypt traffic in transit.</li><li>CORS Configuration — restrict cross-origin response access.</li><li>Rate Limiting — reduce brute force and abuse.</li><li>Security Headers — including X-Frame-Options, X-Content-Type-Options, Referrer-Policy and Permissions-Policy.</li></ol><strong>Principle:</strong> These controls work together as defense in depth; no single control is sufficient for a secure web application.</div>
+<div class="end">End of Module 5</div>
+</main>
+</div>
+</body>
+</html>
