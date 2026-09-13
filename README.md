@@ -1,7 +1,7 @@
 # QUICK-Cybersecurity-REF-
 A structured quick reference of 10 modules that consists of cybersecurity concepts covering foundations, technical skills, security, ethical hacking, and blue team operations.
 
-View the Website : 👉 **[Open QUICK Cybersecurity Reference](https://likhitha-panneeru.github.io/QUICK-Cybersecurity-REF/)**
+View the Website : 👉 **[Open QUICK Cybersecurity Reference](https://likhitha-panneeru.github.io/QUICK-Cybersecurity-REF-/)**
 
 ---
 
