@@ -6,7 +6,6 @@ View the Website : 👉 **[Open QUICK Cybersecurity Reference](https://likhitha-
 ---
 
 # Modules
-
 1. Computer Fundamentals
 2. Computer Networks
 3. Operating Systems
@@ -17,3 +16,5 @@ View the Website : 👉 **[Open QUICK Cybersecurity Reference](https://likhitha-
 8. Web Application Security
 9. Ethical Hacking & Penetration Testing
 10. Incident Response & Blue Team
+    
+<img width="498" height="598" alt="image" src="https://github.com/user-attachments/assets/3978e750-9467-4f56-86fa-d1ade70dba30" />
